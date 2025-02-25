@@ -1,0 +1,37 @@
+# Ignore node_modules (dependencies installed with npm or yarn)
+node_modules/
+
+# Cypress configuration and report files
+cypress/videos/
+cypress/screenshots/
+
+# Logs and report files
+*.log
+*.tsbuildinfo
+cypress/reports/
+cypress/results/
+
+# Output of `npm run build` or similar
+dist/
+build/
+
+# Environment variables
+.env
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Optional: Ignore compiled JavaScript files if you’re using TypeScript
+//*.js.map
+//*.js
+
+# Optional: Ignore coverage files (if using Cypress with coverage reporting)
+coverage/
+nyc_output/
+
+# Optional: Ignore specific config files that may contain personal settings
+cypress.json
+cypress.env.json

@@ -1,0 +1,23 @@
+{
+  "name": "new-setup-1",
+  "version": "1.0.0",
+  "description": "//Matt is better😁",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/testing5620643/new-setup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/testing5620643/new-setup/issues"
+  },
+  "homepage": "https://gitlab.com/testing5620643/new-setup#readme",
+  "devDependencies": {
+    "cypress": "^13.15.1",
+    "cypress-image-snapshot": "^4.0.1"
+  }
+}
