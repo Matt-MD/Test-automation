@@ -8,7 +8,7 @@ Need to install the following:
 
 - Cypress
 - Wick-a11y
--
+-cypress-real-events
 
 
 
@@ -62,3 +62,11 @@ Cypress.Commands.add('checkAccessibility', () => {
   cy.checkA11y(null, {
     includedImpacts: ['critical', 'serious', 'moderate'],
     reporter: 'verbose'    
+    ## adding cypress-real-events
+    npm install --save-dev cypress-real-events --legacy-peer-deps
+    cypress/support/e2e.js 
+    //add this
+    import 'cypress-real-events/support';
+
+  },
+});
