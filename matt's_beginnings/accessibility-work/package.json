@@ -1,0 +1,20 @@
+{
+  "name": "accessibility-work",
+  "version": "1.0.0",
+  "description": "Need to install the following:",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.17.0"
+  },
+  "devDependencies": {
+    "axe-core": "^4.10.3",
+    "cypress-axe": "^1.6.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "wick-a11y": "^2.0.1"
+  }
+}
