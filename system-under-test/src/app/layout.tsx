@@ -1,5 +1,7 @@
+import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "System-under-test",
@@ -11,11 +13,46 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <html lang="en">
-      <body
-      >
+      <body className="min-h-screen bg-gray-50">
+        <header className="bg-white shadow-sm">
+          <div className="container mx-auto px-4 py-6">
+            <h1 className="text-3xl font-bold text-gray-900">Welcome to Our App</h1>
+            <nav className="mt-4">
+              <ul className="flex space-x-4">
+                <li>
+                  <Link
+                    href="/"
+                    className="text-blue-600 hover:text-blue-800 font-medium"
+                    aria-current="page"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/todo"
+                    className="text-blue-600 hover:text-blue-800 font-medium"
+                    aria-label="Go to Todo app"
+                  >
+                    Todo App
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        
         {children}
+        
+        <footer className="bg-gray-800 text-white py-6 fixed bottom-0 left-0 right-0">
+          <div className="container mx-auto px-4 text-center">
+            <p>&copy; {currentYear} Our App. All rights reserved.</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
